@@ -9,8 +9,8 @@ Mail us at hello@schedjoules.com and we'll provide you with your API key.
 For all requests the following headers and parameters are required:
 ```
 Headers
-- API-VERSION		string		Version of API you are using			'1'
-- Authorization		string		Your API key							'Token token="123456789abcdefghijklmopqrstuvwxyz"
+- API-VERSION		string		Version of API you are using	'1'
+- Authorization		string		Your API key					'Token token="123456789abcdefghijklmopqrstuvwxyz"
 
 Parameters
 - u 			string		UUID per user/device (> 19 chars)		'123e4567-e89b-12d3-a456-426655440000'
@@ -21,14 +21,12 @@ Parameters
 GET /events
 			
 Optional GET parameters
-- q			string		search in summary and description		'Ajax'
-- latlng		float		search in area							'52.3,4.9'
-- radius		integer		meters around search area				'10000'
-- start_at_or_after	datetime	search from in UTC						'2016-10-01T19:00:00'	default: now
-- start_before		datetime	search til in UTC						'2017-12-10T06:00:00'
-- categories		string		multiple categories seperated by comma	'sport,concerts'
-- sources		string		multiple sources seperated by comma		'facebook,meetup'
-- results		integer		nr of results returned					'15'					default: 20. max: 100
+- q			string		search in summary and description	'Ajax'
+- latlng		float		search in area				'52.3,4.9'
+- radius		integer		meters around search area	'10000'
+- start_at_or_after	datetime	search from in UTC			'2016-10-01T19:00:00'	default: now
+- start_before		datetime	search til in UTC			'2017-12-10T06:00:00'
+- results		integer		nr of results returned		'15'	default: 20. max: 100
 ```
 
 Example request: https://api.schedjoules.com/events?latlng=52.3,4.9&radius=10000&u=123e4567-e89b-12d3-a456-426655440000
